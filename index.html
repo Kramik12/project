@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kramik's Calisthenics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS reset */
+    body{
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/man-2037255_1280.jpg');
+        height: 775px;
+        /* backdrop-filter:sepia(50%); */
+       
+    }
+    .left{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: inline-block;
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 8px;
+        text-align: center;
+        
+    }
+.left img
+{
+    
+    width: 136px;
+}
+    .mid{ 
+        
+        margin: 30px auto;
+        display:block;
+        width: 50%;
+        /* border: 3px solid plum; */
+    }
+    .right{
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: inline-block;
+        /* border: 3px solid green; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+      
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding:8px 22px;
+    }
+    .navbar li a:hover, .navbar li a:active{
+        color: rgb(194, 193, 193);
+        text-decoration: underline;
+        font-size: 18px;
+    }
+    .btn{
+        font-family: 'Poppins', sans-serif;
+        margin: 0px  9px;
+        background-color: rgb(44, 41, 41);
+        color: rgb(255, 255, 255);
+        padding: 4px 11px;
+        border: 2px solid grey;
+        border-radius: 10px; 
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn :hover, .btn:active{
+        color: rgb(194, 193, 191);
+        text-decoration: underline;
+        background-color: rgb(110, 108, 108);
+        font-size: 14px;
+    }
+    .container{
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 60%;
+    margin: 155px 20px;
+    padding: 15px;
+    }
+    .form-group input{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: block;
+        width: 34%;
+        padding: 6px;
+        border: 1px solid black;
+        margin: 8px auto;
+        font-size: 12px;
+        border-radius: 10px;
+       
+    }
+    .container h1{
+        text-align: center;
+        
+    }
+    .container button{
+         margin:20px auto;
+         display: block;
+        
+    }
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+<img src="img/download-removebg-preview.png">
+<div style="margin-top:-30px;">Calisthenics</div>
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Location</a></li>
+        </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">           
+           <button class="btn">Contact us</button>
+           <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Join the best Calisthenics of Kathmandu now</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Height">
+        </div>
+    </form>
+    <button class="btn">Submit</button>
+    </div>
+    
+</body>
+</html>
